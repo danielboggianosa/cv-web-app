@@ -88,21 +88,20 @@ export class AppComponent implements OnInit {
   }
   userName = 'Daniel Boggiano Sáenz';
   userProfession = { es: 'Desarrollador Full Stack', en: 'Front End Developer' };
-  userPicture = 'https://www.danielboggiano.com/wp-content/uploads/2021/05/Daniel-Boggiano.png';
+  userPicture = '/assets/daniel-boggiano.jpg';
   mainHabilities: Array<Hability> = [
     { name: 'Angular', icon: 'devicon-angularjs-plain' },
     { name: 'React', icon: 'devicon-react-original' },
     { name: 'NodeJs', icon: 'devicon-nodejs-plain' },
     { name: 'PHP', icon: 'devicon-php-plain' },
-    { name: 'Java', icon: 'devicon-java-plain' },
-    { name: 'Visual Studio', icon: 'devicon-visualstudio-plain' },
+    { name: 'CSharp', icon: 'devicon-csharp-plain' },
   ]
   profileDescription = {
     es: `Desarrollador de software experimentado, experto en diseño, instalación, prueba y mantenimiento de sistemas de software. Equipado con un conjunto de habilidades diverso y prometedor. Competente en diversas plataformas, lenguajes y sistemas integrados. Experiencia con las últimas herramientas y procedimientos de desarrollo de vanguardia. Capaz de autogestionarse eficazmente durante proyectos independientes, así como de colaborar como parte de un equipo productivo.`,
     en: `Experienced Front End Software Developer adept to bringing forth expertise in design, more than 3 years working with Angular, installation, testing and maintenance of software systems. Equipped with a diverse and promising skill-set. Proficient in various platforms, languages, and embedded systems. Experienced with the latest cutting Edge development tools and procedures. Able to effectively self-manage during independent projects, as well as collaborate as part of a productive team.​`
   };
   birthday = { es: '6 de marzo de 1987', en: 'March 6, 1987' };
-  age = { es: '34 años', en: '34 years old' };
+  age = { es: '35 años', en: '35 years old' };
   nationality = { es: 'peruano', en: 'peruvian' };
   location = 'San Miguel, Lima, Peru';
   phone = '+51 991885514'
@@ -121,14 +120,14 @@ export class AppComponent implements OnInit {
     { nombre: 'Typescript', nivel: 100, color: 'success' },
     { nombre: 'PHP', nivel: 75, color: 'success' },
     { nombre: 'C#', nivel: 50, color: 'primary' },
-    { nombre: 'Java', nivel: 50, color: 'primary' },
+    { nombre: 'Java', nivel: 25, color: 'primary' },
   ];
   frameworks = [
     { nombre: 'Angular', nivel: 100, color: 'success' },
     { nombre: 'React', nivel: 75, color: 'success' },
     { nombre: 'Node Js', nivel: 100, color: 'success' },
+    { nombre: 'Vue', nivel: 50, color: 'primary' },
     { nombre: 'React Native', nivel: 50, color: 'primary' },
-    { nombre: 'Razor', nivel: 50, color: 'primary' },
   ];
   bases = [
     { nombre: 'MySQL', nivel: 100, color: 'success' },
@@ -144,6 +143,54 @@ export class AppComponent implements OnInit {
     { nombre: 'ZOHO CRM', nivel: 75, color: 'success' },
   ]
   empleos = [
+    {
+      cargo: {
+        es: 'Senior Web UI Developer',
+        en: 'Senior Web UI Developer'
+      },
+      empresa: 'Globant Peru',
+      ciudad: 'Lima',
+      inicio: { month: 11, year: 2021 },
+      fin: { month: 4, year: 2022 },
+      descripcion: {
+        es: [
+          'Trabajar de manera productiva con el equipo de desarrollo a través de metodologías ágiles para comprender los requisitos y las especificaciones comerciales.',
+          'Cambios y alteraciones de software codificados de manera efectiva basados en instrucciones de diseño específicas.',
+          'Trabajé con distintos frameworks y librerías de terceros para el desarrollo de aplicaciones web.',
+          'Tales como: Angular, React, Vue Js, Next JS, Nuxt JS',
+          'Tecnologías de la nube: AWS, Azure, Firebase, Google Cloud',
+        ],
+        en: [
+          'Working productively with the Development Team, using agile methodologies to understand the requirements and commercial specifications',
+          'Effectively coded software changes and alterations based on specific design specifications.​',
+          'I worked with different frameworks and third party libraries to develop web applications.',
+          'Such as: Angular, React, Vue Js, Next JS, Nuxt JS',
+          'Cloud technologies: AWS, Azure, Firebase, Google Cloud',
+        ]
+      },
+    },
+    {
+      cargo: {
+        es: 'Ingeniero de Software Senior (Frontend)',
+        en: 'Senior Software Engineer (Frontend)'
+      },
+      empresa: 'Distillery',
+      ciudad: 'Lima',
+      inicio: { month: 7, year: 2021 },
+      fin: { month: 10, year: 2021 },
+      descripcion: {
+        es: [
+          'Trabajar de manera productiva con el equipo de desarrollo a través de metodologías ágiles para comprender los requisitos y las especificaciones comerciales.',
+          'Cambios y alteraciones de software codificados de manera efectiva basados en instrucciones de diseño específicas.',
+          'Desarrollo de front-end con Angular.',
+        ],
+        en: [
+          'Working productively with the Development Team, using agile methodologies to understand the requirements and commercial specifications',
+          'Effectively coded software changes and alterations based on specific design specifications.​',
+          'Front end development with Angular​',
+        ]
+      },
+    },
     {
       cargo: {
         es: 'Systems Engineer III (Backend)',
@@ -283,6 +330,8 @@ export class AppComponent implements OnInit {
     // { titulo: 'Secundaria', institucion: 'G.U.E. José Granda', ciudad: 'Lima', inicio: '1999', fin: '2003' },
   ];
   referencias = [
+    { nombre: 'Micaela Carrión', empresa: 'Globant Peru', email: 'micaela.carrion@globant.com' },
+    { nombre: 'Ana Canuto', empresa: 'Distillery', email: 'ana.canuto@distillery.com' },
     { nombre: 'Ricardo Vilchez', empresa: 'Rimac Seguros', telefono: '+51 995 981 202' },
     { nombre: 'Frank Yupanki', empresa: 'Indra Company', telefono: '+51 954 161 870' },
     { nombre: 'Kevin Martel', empresa: 'IT Data Consulting', telefono: '+51 959 218 801' },
@@ -320,13 +369,13 @@ export class AppComponent implements OnInit {
       codigo: 'UC-3f026bdf-382e-420a-903c-0e20d669f76b',
       link: 'https://ude.my/UC-3f026bdf-382e-420a-903c-0e20d669f76b'
     },
-    { 
+    {
       titulo: 'SCRUM con JIRA - Metodología Agile',
       fecha: { month: 6, year: 2021 }, codigo:
-      'UC-3856a987-668a-4436-881e-333117d8896f',
+        'UC-3856a987-668a-4436-881e-333117d8896f',
       link: 'https://ude.my/UC-3856a987-668a-4436-881e-333117d8896f'
     },
-    { 
+    {
       titulo: 'Clean Code',
       fecha: { month: 5, year: 2021 },
       codigo: 'UC-4a0d8efd-8fc3-4c45-9e23-e73fe24ba7d6',
@@ -352,9 +401,10 @@ export class AppComponent implements OnInit {
     },
     {
       titulo: 'DELF B2',
-      fecha: {month: 8, year: 2007},
+      fecha: { month: 8, year: 2007 },
       codigo: '051014007570',
-      link: 'https://utpedupe-my.sharepoint.com/:i:/g/personal/1011316_utp_edu_pe/EQRTwIrp2sFNjNtEhM8O_0UB2CW13v70fe0XvBSyYk2b2g?e=18ktlt' },
+      link: 'https://utpedupe-my.sharepoint.com/:i:/g/personal/1011316_utp_edu_pe/EQRTwIrp2sFNjNtEhM8O_0UB2CW13v70fe0XvBSyYk2b2g?e=18ktlt'
+    },
   ];
 
   constructor(private route: ActivatedRoute) { }
