@@ -161,7 +161,7 @@ export class AppComponent implements OnInit {
       empresa: 'Globant Peru',
       ciudad: 'Lima',
       inicio: { month: 11, year: 2021 },
-      fin: { month: 8, year: 2022 },
+      fin: { month: 9, year: 2022 },
       descripcion: {
         es: [
           'Trabajar de manera productiva con el equipo de desarrollo a través de metodologías ágiles para comprender los requisitos y las especificaciones comerciales.',
@@ -181,35 +181,13 @@ export class AppComponent implements OnInit {
     },
     {
       cargo: {
-        es: 'Ingeniero de Software Senior (Frontend)',
-        en: 'Senior Software Engineer (Frontend)',
-      },
-      empresa: 'Distillery',
-      ciudad: 'Lima',
-      inicio: { month: 7, year: 2021 },
-      fin: { month: 10, year: 2021 },
-      descripcion: {
-        es: [
-          'Trabajar de manera productiva con el equipo de desarrollo a través de metodologías ágiles para comprender los requisitos y las especificaciones comerciales.',
-          'Cambios y alteraciones de software codificados de manera efectiva basados en instrucciones de diseño específicas.',
-          'Desarrollo de front-end con Angular.',
-        ],
-        en: [
-          'Working productively with the Development Team, using agile methodologies to understand the requirements and commercial specifications',
-          'Effectively coded software changes and alterations based on specific design specifications.​',
-          'Front end development with Angular​',
-        ],
-      },
-    },
-    {
-      cargo: {
         es: 'Systems Engineer III (Backend)',
         en: 'Systems Engineer III (Backend)',
       },
       empresa: 'Indra Company',
       ciudad: 'Lima',
       inicio: { month: 5, year: 2021 },
-      fin: { month: 7, year: 2021 },
+      fin: { month: 10, year: 2021 },
       link: 'https://utpedupe-my.sharepoint.com/:b:/g/personal/1011316_utp_edu_pe/EQIYzEd0SO1NlTEIeYPusicBd5hHcL3UL_ZZcksdqjsFKA?e=a9XUiw',
       descripcion: {
         es: [
@@ -231,43 +209,14 @@ export class AppComponent implements OnInit {
       },
     },
     {
-      cargo: { es: 'Desarrollador Full Stack', en: 'Full Stack Developer' },
-      empresa: 'IT Data Consulting',
-      ciudad: 'Lima',
-      inicio: { month: 3, year: 2021 },
-      fin: { month: 5, year: 2021 },
-      link: 'https://utpedupe-my.sharepoint.com/:b:/g/personal/1011316_utp_edu_pe/EY07Ph9fb4dIpBH5-ASKrhMBd1zueOt5RnG1MKwl8u6lTw?e=2Oif8A',
-      descripcion: {
-        es: [
-          'Trabajar de manera productiva con el equipo de productos para comprender los requisitos y las especificaciones comerciales en torno a la gestión de carteras, análisis y riesgos.',
-          'Cambios y alteraciones de software codificados de manera efectiva basados en especificaciones de diseño específicas.',
-          'Desarrollo de front-end con React',
-          'Desarrollo de back-end con Node Js, Sequelize, Express.',
-          'Desarrollo móvil con React Native y Java',
-          'Gestión y creación de Docker Containers',
-          'Gestión de base de datos: PostgreSQL',
-          'Almacenamiento: Amazon S3 a través de CLI y mediante programación',
-        ],
-        en: [
-          'Working productively with Product Team to understand requirements and business specifications around Portfolio Management, Analytics and Risk.​',
-          'Effectively coded software changes and alterations based on specific design specifications.​',
-          'Front end development with React​',
-          'Back end development with Node Js, Sequelize, Express.​',
-          'Mobile development with React Native and Java​',
-          'Database management: PostgreSQL​',
-          'Storage: Amazon S3 via CLI and programmatically​',
-        ],
-      },
-    },
-    {
       cargo: {
         es: 'Desarrollador Full Stack',
         en: 'Front End Developer',
       },
       empresa: 'Panacea Consultores',
       ciudad: 'Lima',
-      inicio: { month: 2, year: 2019 },
-      fin: { month: 2, year: 2021 },
+      inicio: { month: 1, year: 2019 },
+      fin: { month: 5, year: 2021 },
       descripcion: {
         es: [
           'Cambios y alteraciones de software codificados basados en especificaciones de diseño.',
